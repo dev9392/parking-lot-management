@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+   
+    <div id="upperpanel">
+        <a id="titlename">Parking lot management</a>
+            <a href="#newtext" class="getdown">Home</a>
+            <a href="#tableHead" class="getdown">Vehicle details</a>
+         
+            <div id="menuclick" onclick="drop();">
+             <img src="menu.png" title="menu" width="30px" height="20px"> 
+            </div>
+    </div>
+    <p id="newtext">Do you want to add new Vehicle?</p>
+    <div id="formandimage">
+        <div id="filldetails">
+            <p class="fd">Fill details</p>
+            <p class="fd">Fill details</p>
+        </div>
+        <div id="newdiv">
+            <form id="formee">
+                <p class="paraform"><label for="ownername">Owner Name:</label></p>
+                <input class="formdetails" type="text" placeholder="Owner Name" id="ownername">
+                <p class="paraform"><label for="vehicle-name">Vehicle Name:</label></p>
+                <input class="formdetails" type="text" placeholder="vehicle name" id="vehicle-name">
+                <p class="paraform"><label for="vehicle-number">Vehicle Number:</label></p>
+                <input class="formdetails" type="text" placeholder="eg- HR-36-RN-5674" id="vehicle-number">
+                <p class="paraform"><label for="entry-date">Entry Date:</label></p>
+                <input class="formdetails" type="date" placeholder="dd-mm-yyy" id="entry-date">
+                <p class="paraform"><label for="exit-date">Exit Date:</label></p>
+                <input class="formdetails" type="date" placeholder="dd-mm-yyyy" id="exit-date">
+                <br>
+                <input type="reset"  id="resetbutton">
+                <button type="submit" class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne">Add Car</button>
+            
+            </form>
+        </div>
+        
+            
+        
+    </div>
+    <p style="font-size: 1.8em;width: fit-content;margin: auto;margin-top: 30px; color: red;font-weight: 1000;">Here is the list of all cars present in parking lot</p>
+    <div class="table-container mt-5 mb-5 w-75 mx-auto" >
+        <input type="text" class="w-100 mb-3" id="searchInput" placeholder="Search...">
+        <table class="table table-striped shadow " id="parkingTable">
+                <thead class="text-white" id="tableHead">
+                  <tr>
+                    <th scope="col">Owner</th>
+                    <th scope="col">Vehicle</th>
+                    <th scope="col">License Plate</th>
+                    <th scope="col">Entry Date</th>
+                    <th scope="col">Exit Date</th>
+                    <th scope="col">Del.</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                 
+                </tbody>
+              </table>
+    </div>
+   <script>
+       
+
+   </script>
+   <script src="bootstrap.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
